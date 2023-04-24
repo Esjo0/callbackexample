@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    {# 
+        Simple explanation for all back functions in Javascript 
+        The displayName function is called and the myName function is a call back function.
+        The myName function holds the name to be displayed
+    #}
+
+    //call back function 
+    function myName(firstName, lastName){
+        console.log("My Full Name is "+firstName+" "+lastName+".");
+    }
+
+    function displayName(myName){
+        console.log("What is your fullname?");
+        myName('Joshua', 'Esan');
+    }
+
+
+    //intiate function call and pass call back function as a parameter
+    displayName(myName);
+</script>
+</head>
+</html>
